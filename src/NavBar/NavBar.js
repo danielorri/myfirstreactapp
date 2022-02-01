@@ -13,7 +13,7 @@ export class NavBar extends React.Component {
    
     handleClick(){
         const display = this.state.display;
-        const width = window.innerWidth;
+        
         
 
         if(display === 'block'){
