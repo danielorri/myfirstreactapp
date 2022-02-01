@@ -1,0 +1,128 @@
+html{
+  --main-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+@media(min-width: 769px){
+.overlay-content{
+  padding: 3rem 0;
+  background-color: white;
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 2rem;
+ border-radius: 2rem;
+ box-shadow:var(--main-shadow);
+ padding: 0 2rem;
+}
+
+
+.overlay-content .a:hover{
+  cursor: pointer;
+  width: 3rem;
+  color: white;
+  background-color: var(--color-2);
+  border-radius: .5rem;
+  box-shadow:var(--main-shadow);
+  
+  transition: ease-in 50ms;
+}
+
+.ctcButton{
+  align-self: start;
+  font-size: 1rem;
+  background-color: var(--color-3);
+  color: #f1f1f1;
+  border-radius: 2rem;
+  box-shadow:var(--main-shadow);
+  position: relative;
+  bottom: .2rem;
+  transition: ease-in 300ms;
+}
+
+.ctcButton:hover{
+  
+  background-color: #f1f1f1;
+  color: var(--color-3);
+}
+
+.cls-btn{
+  visibility: hidden;
+}
+
+}
+
+
+
+
+
+@media(max-width: 768px){
+.overlay {
+    height: 100vh;
+    width: 100%;
+    position: fixed; 
+    z-index: 0; 
+    left: 0;
+    top: 0;
+    line-height: 10rem;
+    background-color: var(--color-3); 
+    opacity: .9; 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+  }
+  
+  
+  .overlay-content {
+    position: relative; 
+    width: 100%; 
+    text-align: center; 
+    top: 20%
+  }
+  
+  
+  .overlay .a {
+    
+    text-decoration: none;
+    font-size: 3rem;
+    color: white;
+    display: block; 
+    transition: 0.3s; 
+  }
+  
+  
+  .overlay a:hover, .overlay a:focus {
+    color: var(--color-2);
+  }
+  
+  
+  
+  .ctcButton {
+    color: white;
+    background-color: transparent;
+    font-size: 3rem;
+    border: white;
+    border-radius: 15px;
+  }
+
+  .ctcButton:hover{
+      background-color: white;
+      color: black;
+  }
+  
+  button{
+      background-color: transparent;
+      border: none;
+      
+  }
+
+.cls-btn{
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+} 

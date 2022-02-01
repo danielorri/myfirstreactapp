@@ -1,0 +1,114 @@
+.p-form{
+text-align: center;
+margin: 2rem 0;
+}
+
+
+.contact-form{
+    color: white;
+    background-color: var(--color-2);
+    margin: 5rem auto 0;
+    padding: 5rem 0;
+}
+
+.h1-form{
+    margin-left: 3rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-shadow: var(--main-shadow);
+}
+
+.ctc-form{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input-form{
+    color: white;
+    border: none;
+    margin: 1rem 0; 
+    padding: 1rem .8rem;
+    border-radius: 1rem;
+    box-shadow: var(--main-shadow);
+    background-color: var(--color-1);
+}
+
+.input-form::placeholder{
+    color: white;
+}
+
+.btn-form{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.text-form{
+    grid-area: text-a;
+    color: white;
+    border: none;
+    padding: 4rem .8rem;
+    border-radius: 1rem;
+    box-shadow: var(--main-shadow);
+    margin-bottom: 1rem;
+    background-color: var(--color-1);
+}
+
+.text-form::placeholder{
+    color:white;
+}
+
+@media(min-width: 768px){
+    .contact-form{
+        width: 100%;
+        text-align: center;
+    }
+
+    .ctc-form{
+        box-sizing: border-box;
+        display: grid;
+
+        grid-template-areas: 
+        'in1 in2'
+        'in3 in3'
+        'textf textf'
+        '. btnform';
+    }
+
+    .ctc-form::before{
+        box-sizing: border-box;
+    }
+
+    .ctc-form::after{
+        box-sizing: border-box;
+    }
+    .text-form{
+        grid-area: textf;
+        width: 100%;
+    }
+    .input-1{
+        grid-area: in1;
+        width: 90%;
+        margin-right: 5rem;
+        
+    }
+
+    .input-2{
+        grid-area: in2;
+        width: 100%;;
+        
+        
+    }
+    .input-3 {
+        grid-area: in3;
+        width: 100%;
+    }
+    .btn-form{
+        grid-area: btnform;
+        justify-self: end;
+        border: none;
+    }
+}

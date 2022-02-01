@@ -1,0 +1,22 @@
+
+
+.h1-am{
+    text-align: end;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.p-am{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+
+@media(max-width: 768px){
+    .about-me{
+        width: 80%;
+        margin: auto;
+    }    
+
+}

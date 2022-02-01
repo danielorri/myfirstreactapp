@@ -1,0 +1,65 @@
+body{
+    overflow-x:hidden;
+}
+
+.app-other{
+    margin-top: 0;
+}
+
+.app-main{
+    margin-top: 11rem;
+}
+
+a:visited{
+    text-decoration: none;
+    color:inherit;
+}
+
+a:link{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media(min-width:768px){
+    .app-other{
+        margin-top: 8rem;
+    }
+.app-main{
+
+    margin-top: 9rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    'home about-me'
+    'work work'
+    'skills skills'
+    'contact contact'
+    ;
+    justify-items: center;
+}
+
+
+.home{
+    grid-area: home;
+}
+
+.about-me{
+    grid-area: about-me;
+}
+
+.work{
+    grid-area: work;
+}
+
+.skills{
+    grid-area:skills;
+}
+
+.app-other{
+    align-self: center;
+    width: 80%;
+}
+.contact-form{
+grid-area: contact;
+}
+}

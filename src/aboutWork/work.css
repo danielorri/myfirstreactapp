@@ -1,0 +1,85 @@
+.work{
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-2);
+    display: grid;
+    gap: 2rem;
+    align-items: start;
+    margin: 4rem 0;
+    display: inline-block;
+}
+
+.btn-work:disabled{
+    visibility: hidden;
+}
+
+@media(max-width: 766px){
+    .work{
+        display: grid;
+        justify-items: center;
+        padding: 0;
+    }
+}
+
+.description{
+    display: grid;
+    gap:1rem;
+    text-shadow: var(--main-shadow);
+}
+
+.example-img{
+height: 15rem;
+width: 25rem;
+   background-image: url('https://1.bp.blogspot.com/-cojeNeou7ek/XpkCo2cIQYI/AAAAAAAAACY/0CcqxOJKvBMSBWzKFwGBtlotkYaJ1qwrgCLcBGAsYHQ/s1600/Coding%2Bdan%2BPrograming.png');
+   background-size: contain;
+   box-shadow: var(--main-shadow);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.h1-work{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.p-work{
+    font-size: 1.5rem;
+}
+
+.btn-work{
+    justify-self: start;
+    width: fit-content;
+    background-color: transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: var(--main-shadow);
+    margin-bottom: 1rem;
+}
+
+.btn-work:hover{
+    background-color: var(--color-3);
+    color: #f1f1f1;
+    transition: ease-in 250ms;
+  }
+
+@media(min-width:768px){
+.work{
+    padding: 10rem 3rem;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.description{
+    display: grid;
+    gap:1rem;
+}
+
+.example{
+    
+    justify-self: center;
+}
+
+}
